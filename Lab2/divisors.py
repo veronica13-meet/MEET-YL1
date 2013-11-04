@@ -1,3 +1,4 @@
-n = raw_input("give me a number")
-for n in range(n) :
-	print range + 1
+a = raw_input("give me a number")
+n = int(a)
+for n in xrange(n) :
+	print n + 1
