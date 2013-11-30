@@ -1,0 +1,601 @@
+﻿html {
+	/* Makes 1em ~ 10px */
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.4em;
+	font-family: Tahoma, Arial, Sans-Serif;
+	line-height: 1.3em;
+	margin: 0px;
+	border: 0px;
+}
+
+form {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+	color: #33c;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #449;
+}
+
+a:hover {
+	color: #00f;
+	text-decoration: underline;
+}
+
+/* -----| Reusable elements |----------------------------------------------- */
+div.FloatWrap {
+	overflow: hidden;
+}
+
+div.Left {
+	float: left;
+}
+
+div.Right {
+	float: right;
+}
+
+div.Clear {
+	clear: both;
+}
+
+div.Centered {
+	text-align: center;
+	margin: 0px auto;
+}
+
+div.SideMargin {
+	margin: 0px 10px;
+}
+
+div.GapLeft {
+	margin-left: 10px;
+}
+
+div.GapRight {
+	margin-right: 10px;
+}
+
+div.GapTop {
+	margin-top: 10px;
+}
+
+div.GapBottom {
+	margin-bottom: 10px;
+}
+
+div.TopGap {
+	margin-top: 2em;
+}
+
+div.BottomGap {
+	margin-bottom: 1em;
+}
+
+div.TextLeft {
+	text-align: left;
+}
+
+div.Loading {
+	z-index: 10;
+	width: 10em;
+	background-color: #ffffbf;
+	border: solid 1px #777;
+	padding: 0.2em 0.5em;
+	text-align: center;
+}
+
+div.Loading img {
+	vertical-align: middle;
+	padding-bottom: 6px;
+}
+
+div.LoadingPopup {
+	position: absolute;
+	border: solid 1px #333;
+	padding: 1px;
+	background-color: #fff;
+	font-size: 15px;
+	width: 150px;
+	height: 20px;
+	text-align: center;
+	padding: 10px;
+}
+
+#divMessages {
+	display: none;
+}
+
+div.Warning, div.Error, div.Confirm {
+    padding: 0.7em; 
+    margin: 0.7em;
+    text-align: justify;
+}
+
+div.Warning {
+    border: solid 1px #777;
+    background-color: #FFFFBF;
+}
+
+div.Error {
+    border: solid 1px #FF8080;
+    background-color: #FFBFBF;
+}
+
+div.Confirm {
+	border: solid 1px #191;
+	background-color: #cfc;
+}
+
+div.Info {
+	border: solid 1px #CED9C1;
+	padding: 0.3em 1em;
+	margin-bottom: 1em;
+	color: #000;
+	background-color: #edf8ed;
+	font-size: 0.9em;
+}
+
+/* -----| Page elements |--------------------------------------------------- */
+div.Container {
+	background: url(../_Images/SegmentBack.png) top center repeat-x #fff;
+	margin: 0px;
+	border: 0px;
+	/* Fix display bug in IE */
+	_border: solid 0.01em #fff;
+}
+
+div.LeftColumn {
+	float: left;
+	width: 15em;
+	line-height: 1.2em;
+	left: 0px;
+	margin-right: 1em;
+}
+
+div.TopBar {
+	text-align: right;
+	font-size: 0.7em;
+	margin: 0em;
+	padding: 0.5em 1em 0em 0.2em;
+	float:right;
+}
+
+div.TopBar img {
+	border: none;
+	
+}
+
+div.Content {
+}
+
+a.Logo img {
+	float: left;
+	border: 0px;
+	margin: 5px 0px 0px 10px;
+}
+
+div.SearchHead {
+	margin: 15px 0px 0px 10px;
+	height: 70px;
+}
+
+div.SearchHead img {
+	display: block;
+	border: 0px;
+	margin: 0px 25px 10px 0px;
+	float: left;
+}
+
+div.SearchBox {
+	line-height: 0.75em;
+	text-align: left;
+	padding-top: 10px;
+}
+
+div.SearchBox input {
+}
+
+div.SearchBox div {
+	margin: 0px 0px 5px 0px;
+}
+
+.SearchBox input[type="text"] {
+	width: 300px;
+}
+
+.BtnSearch {
+	font-family: Tahoma,Arial,Sans-Serif;
+	vertical-align: bottom;
+	height: 25px;
+}
+
+div.SearchBox div.Tools {
+	line-height: 0.8em;
+}
+
+div.SearchBox div.Tools a {
+	font-size: 0.65em;
+}
+
+div.SearchBoxTop a {
+	margin-right: 0.75em;
+	color: #36497D;
+}
+
+div.SearchBoxTop a:hover {
+	text-decoration: underline;
+}
+
+div.SearchBoxTop a.Active {
+	color: #f60;
+	font-weight: bold;
+
+}
+
+div.SearchBoxTop a.Active:hover {
+	color: #f60;
+	text-decoration: underline;
+}
+
+div.SearchBar {
+	font-size: 0.9em;
+	width: 100%;
+	color: #fff;
+	margin: 2px auto 10px auto;
+	padding: 3px 0px;
+	/*border-top: solid 1px #405080;
+	background-color: #5C73B8;*/
+	background: url(../_Images/DataTableBack.gif) top center repeat-x #fff;
+	z-index: 1;
+	text-align: right;
+}
+
+div.SearchBar a, div.SearchBar a:link, div.SearchBar a:visited, div.SearchBar a, div.SearchBar a {
+	color: #f90;
+}
+
+div.SearchBar div.Left {
+	margin-left: 5px;
+	text-align: left;
+}
+
+div.SearchBar div.Right {
+	margin-right: 5px;
+	float: none;
+}
+
+div.SiteFoot {
+	clear: both;
+	border-top: solid 1px #CFD4E6;
+	margin: 25px auto 10px auto;
+	padding-top: 10px;
+	text-align: center;
+	font-size: 0.8em;
+	color: #aaa;
+}
+
+div.SiteFoot div.Links {
+	margin-bottom: 10px;
+}
+
+div.SiteFoot div a, div.SiteFoot div a:link, div.SiteFoot div a:visited, div.SiteFoot div a:hover, div.SiteFoot div a:active {
+	color: #aaa;
+}
+
+div.SiteFoot div a:hover {
+	color: #777;
+}
+
+div.SiteFoot div.Links a {
+	margin: 0px 8px;
+	color: #777;
+}
+
+div.Popup, div.More {
+	position: absolute;
+	z-index: 5;
+	border: solid 1px #888;
+	background: url(../_Images/SegmentBack.png) top center repeat-x #fff;
+	width: 125px;
+	clear: both;
+}
+
+div.More {
+	display: none;
+	font-size: 0.8em;
+	position: absolute;
+	z-index: 1000;
+	margin-left: -82px;
+	margin-top: 19px;
+	width: 10em;
+	border: none;
+	border-left: solid 1px #5D75B9;
+	border-right: solid 1px #5D75B9;
+	background: #FFF;
+}
+
+div.More img, div.Popup img.X {
+	float: right;
+	border: none;
+	padding: 0px;
+	margin: 0px;
+	display: block;
+	text-align: right;
+}
+
+div.More ul {
+	border-top: solid 1px #5D75B9;
+}
+
+div.More ul, div.More ul li, div.Popup ul, div.Popup li {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+div.More li {
+	/*list-style-image: url(../_Images/Arrow_re_grey.png);*/
+	border-bottom: solid 1px #5D75B9;
+}
+
+div.More ul li a {
+	color: #5D75B9;
+	padding: 0.2em;
+	padding-left: 0.6em;
+	margin: 0em;
+	display: block;
+}
+
+div.More ul li a:hover {
+	color: #F60;
+	background-color: #EFEFFF;
+}
+
+div.Popup {
+	display: block;
+	padding: 0.5em 1em;
+}
+
+div.GoTop {
+	text-align: right;
+	font-size: 0.8em;
+	color: #333;
+	margin-bottom: 1em;
+}
+
+/* -----| Search popup menus |---------------------------------------------- */
+div.SearchPopup {
+	position: absolute;
+	z-index: 1;
+	display: none;
+	border: solid 1px #ccc;
+	padding: 0.5em;
+	font-size: 0.9em;
+}
+
+div.SearchPopup a {
+	color: #777;
+	display: block;
+}
+
+
+
+/* -----| Revision History |------------------------------------------------ */
+div.RevisionHistory {
+	font-family: Consolas, "Courier New";
+}
+
+div.RevisionHistory h3 {
+	font-weight: bold;
+	font-size: 1.3em;
+	margin: 0px;
+	padding: 0px;
+}
+
+div.RevisionHistory h4 {
+	font-weight: bold;
+	font-size: 1.1em;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/* -----| Icon Bar |-------------------------------------------------------- */
+div.IconBar {
+	font-family: Tahoma, Arial, Sans-Serif;
+	font-size: 8pt;
+	text-align: left;
+}
+
+div.IconBar a, div.IconBar a:link, div.IconBar a:visited, div.IconBar a:hover, div.IconBar a:active {
+	color: #999;
+	text-decoration: underline;
+}
+
+div.IconBar a:hover {
+	color: #444;
+}
+
+div.IconBar a img {
+	border: 0px;
+	vertical-align: text-bottom;
+	text-decoration: none;
+}
+
+div.IconBar span {
+	margin-right: 0.7em;
+}
+
+div.OptionsBox {
+	display: none;
+	font-size: 0.8em;
+	width: 20em;
+	padding: 1em;
+}
+
+div.OptionsBox h3 {
+	color: #f60;
+	margin: 0em 0em 0.5em 0em;
+	padding: 0em;
+	font-size: 1.2em;
+}
+
+div.OptionsBox ul, div.OptionsBox ul li {
+	margin: 0em;
+	padding: 0em;
+}
+
+div.OptionsBox hr {
+	border: solid 1px #f1f1f1;
+}
+
+div.OptionsBox span a img {
+	float: right;
+	border: none;
+	margin: 0px;
+	padding: 0px 0px 10px 10px;
+	display: block;
+	text-align: right;
+}
+
+div.OptionsBox ul li span {
+	
+}
+
+div.OptionsBox table tr th {
+	font-weight: bold;
+	text-align: left;
+	border-bottom: solid #5D75B9 1px;
+	color: #5D75B9;
+}
+
+div.OptionsBox table {
+	width: 99%;
+}
+
+div.OptionsBox table tr td {
+	padding-top: 0.5em;
+	width: 33%;
+	text-align: center;
+}
+
+div.OptionsBox table tr td a img {
+	border: none;
+	margin: 0em;
+}
+
+div.OptionsBox table tr td a:link, div.OptionsBox table tr td a:visited, div.OptionsBox table tr td a:active {
+	color: #555;
+}
+
+div.OptionsBox table tr td a:hover {
+	color: #F60;
+}
+
+div.OptionsBox p {
+	text-align: left;
+	margin: 0em 0em 0.5em 0em;
+}
+
+div.OptionsBox div.Links {
+	text-align: right;
+	margin-right: 0.5em;
+}
+
+div.Note {
+	font-size: 0.95em;
+	color: #555;
+	margin: 1.0em 0.5em 0.5em 0.5em;
+	padding: 0.5em;
+	border: solid 1px #5D75B9;
+	line-height: 1.2em;
+	background-color: #EFEFFF;
+}
+
+div.Note div.Header {
+	margin-left: 0.6em;
+}
+
+div.Note div.Header span{
+	padding-left: 0.5em;
+	font-weight: bold; 
+	color: #324374;
+}
+
+div.Note div.Message {
+	padding-left: 0.5em;
+	padding-top: 0.5em; 
+	color: #5D75B9
+}
+
+div.OptionsBox select {
+	font-size: 1em;
+	width: 100%; 
+}
+
+div.DownloadBox p {
+	margin-top: 1em;
+	line-height: 1.3em;
+}
+
+div.Footnotes a {
+	color: #666;
+}
+
+div.Show {
+	display: block;
+}
+
+div.Hide {
+	display: none;
+}
+
+p.Show {
+	display: block;
+}
+
+p.Hide {
+	display: none;
+}
+
+div.NotFound {
+	padding: 1em;
+}
+
+div.NotFound h3 {
+	font-size: 1.2em;
+	color: #36497D;
+	font-weight: normal;
+	margin-top: 0.8em;
+}
+
+div.NotFound img {
+	padding: 2em;
+	padding-top: 0em;
+}
+
+#NotFoundTxt 
+{
+	width: 35em;
+	line-height: 1.2em;
+	color: #444;
+	padding-bottom: 1.5em;
+}
+
+.metadataNote {
+	border-top: 1px solid #ccc; 
+	padding: 2px; border-bottom: 1px solid #ccc; 
+	padding: 2px; 
+	font-size: 0.9em;
+}
+
